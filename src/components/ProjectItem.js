@@ -1,8 +1,9 @@
 import React from "react";
+import ProjectList from "./ProjectList";
 
 function ProjectItem({ name, about, technologies }) {
   const technologiesMapped = technologies.map((technology) => {
-    return <span>{technology}</span>
+    return <span key={technology}>{technology}</span>
   })
   return (
     <div className="project-item">
